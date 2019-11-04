@@ -6,6 +6,14 @@ body{
     color:#505962;
 }
 
+
+.offset:before{
+    display:block;
+    content:"";
+    height:4.5rem;
+    margin-top: -4.5rem;
+}
+
 /* NAVIGATION */
 .navbar{
     text-transform: uppercase;
@@ -17,6 +25,8 @@ body{
 
 .navbar-brand img{
     height:3rem;
+    margin-left:.5rem;
+    margin-right: -.5rem;
 }
 
 .navbar-nav li{
@@ -30,7 +40,7 @@ body{
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
-    color:#1ebba3;
+    color:#1cb9f7;
 }
 
 /* LANDING PAGE */
@@ -68,4 +78,44 @@ body{
     height:auto;
     width:40%;
 }
+
+/* FEATURES CSS */
+
+.jumbotron{
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+    border-radius: 0;
+    height: calc(100vh - 75px);
+}
+
+h3.heading{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+    width: 3rem;
+    height:.2rem;
+    background-color: #1cb9f7;
+    margin: 0 auto 2rem;
+}
+
+.mid-jumbo{
+    background-color: rgb(202, 202, 202);
+}
+
+.myImage{
+    width: 40%;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .myImage {
+      width: 40%;
+    }
+  }
+
 
